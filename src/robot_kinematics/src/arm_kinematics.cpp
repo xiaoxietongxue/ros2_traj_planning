@@ -138,6 +138,11 @@ int ArmKinematics::dof() const
   return static_cast<int>(holder_->group->getVariableCount());
 }
 
+moveit::core::RobotModelConstPtr ArmKinematics::robotModel() const
+{
+  return holder_->model;
+}
+
 std::string ArmKinematics::groupName() const
 {
   return group_name_;

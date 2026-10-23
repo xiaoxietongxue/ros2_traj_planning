@@ -30,11 +30,16 @@ ament_target_dependencies(planning_demo
   rclcpp geometry_msgs moveit_msgs moveit_ros_planning_interface)
 
 install(TARGETS motion_planner planning_demo
+  EXPORT export_motion_planner
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY include/
   DESTINATION include)
+
+ament_export_targets(export_motion_planner HAS_LIBRARY_TARGET)
+ament_export_dependencies(
+  rclcpp geometry_msgs moveit_msgs moveit_ros_planning_interface shape_msgs)
 
 ament_package()

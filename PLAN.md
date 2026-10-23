@@ -29,12 +29,12 @@
 |---|---|---|
 | Phase 1 | ROS 2 环境、工作空间、C++ Topic 通信 | 已完成 |
 | Phase 2 | UR5e 模型与 MoveIt 2 基础规划 | 已完成 |
-| Phase 3 | 机械臂运动学（FK / IK / Jacobian） | 已完成，等待确认 |
-| Phase 4 | 五次多项式轨迹生成 | 未开始 |
-| Phase 5 | Minimum Jerk 轨迹优化 | 未开始 |
-| Phase 6 | MINCO 研究与移植 | 未开始 |
-| Phase 7 | MoveIt 2 与轨迹优化集成 | 未开始 |
-| Phase 8 | 轨迹性能评估与实验 | 未开始 |
+| Phase 3 | 机械臂运动学（FK / IK / Jacobian） | 已完成 |
+| Phase 4 | 五次多项式轨迹生成 | 已完成 |
+| Phase 5 | Minimum Jerk 轨迹优化 | 已完成 |
+| Phase 6 | MINCO 研究与移植 | 已完成 |
+| Phase 7 | MoveIt 2 与轨迹优化集成 | 已完成 |
+| Phase 8 | 轨迹性能评估与实验 | 已完成 |
 
 ## 架构原则
 

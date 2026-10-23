@@ -29,11 +29,14 @@ target_link_libraries(kinematics_demo arm_kinematics)
 ament_target_dependencies(kinematics_demo rclcpp)
 
 install(TARGETS arm_kinematics kinematics_demo
+  EXPORT export_arm_kinematics
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION lib/${PROJECT_NAME})
 install(DIRECTORY include/
   DESTINATION include)
+ament_export_targets(export_arm_kinematics HAS_LIBRARY_TARGET)
+ament_export_dependencies(ament_index_cpp rclcpp moveit_core moveit_ros_planning Eigen3)
 
 if(BUILD_TESTING)
   find_package(ament_cmake_gtest REQUIRED)

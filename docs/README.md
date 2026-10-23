@@ -16,12 +16,12 @@
 |---|---|---|
 | Phase 1 | [环境与 ROS 2 基础](01_environment_setup/tutorial.md) | 能编译并看到 talker / listener 通信 |
 | Phase 2 | [UR5e 与 MoveIt 2 基础](02_moveit_basics/tutorial.md) | 已完成 |
-| Phase 3 | [机械臂运动学](03_robot_kinematics/tutorial.md) | 已完成，等待确认 |
-| Phase 4 | 五次多项式轨迹 | 未开始 |
-| Phase 5 | Minimum Jerk | 未开始 |
-| Phase 6 | MINCO | 未开始 |
-| Phase 7 | 系统集成 | 未开始 |
-| Phase 8 | 性能评估 | 未开始 |
+| Phase 3 | [机械臂运动学](03_robot_kinematics/tutorial.md) | 已完成 |
+| Phase 4 | [五次多项式](04_trajectory_generation/tutorial.md) | 已完成 |
+| Phase 5 | [Minimum Jerk](05_minimum_jerk/tutorial.md) | 已完成 |
+| Phase 6 | [MINCO](06_minco/tutorial.md) | 已完成 |
+| Phase 7 | [系统集成](07_system_integration/tutorial.md) | 已完成 |
+| Phase 8 | [性能评估](08_performance_evaluation/tutorial.md) | 已完成 |
 
 Phase 1 附加文件：常见问题 / 练习 / 答案 / [开发报告](01_environment_setup/development_report.md)
 
@@ -39,3 +39,11 @@ Phase 3 附加文件：
 - [练习](03_robot_kinematics/exercises.md)
 - [参考答案](03_robot_kinematics/solutions.md)
 - [开发报告](03_robot_kinematics/development_report.md)
+
+Phase 4–8 的教程、练习和开发报告在对应目录：
+
+- `04_trajectory_generation`
+- `05_minimum_jerk`
+- `06_minco`（含 [论文笔记](06_minco/paper_notes.md)）
+- `07_system_integration`
+- `08_performance_evaluation`

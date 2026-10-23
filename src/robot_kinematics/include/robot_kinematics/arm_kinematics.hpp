@@ -6,6 +6,7 @@
 
 #include <Eigen/Core>
 #include <Eigen/Geometry>
+#include <moveit/robot_model/robot_model.h>
 #include <rclcpp/rclcpp.hpp>
 
 namespace robot_kinematics
@@ -41,6 +42,7 @@ public:
   static std::shared_ptr<ArmKinematics> createUr5e(const rclcpp::Node::SharedPtr & node);
 
   int dof() const;
+  moveit::core::RobotModelConstPtr robotModel() const;
   std::string groupName() const;
   std::string tipLink() const;
   std::string modelFrame() const;

@@ -26,4 +26,4 @@
 
 ## 当前阶段
 
-Phase 3：`src/robot_kinematics` 与 `docs/03_robot_kinematics`。未经确认不得进入 Phase 4。
+Phase 1–8 已实现。碰撞约束仍在生成后检查，没有进入 MINCO 优化器。不要把五次多项式称作 MINCO。

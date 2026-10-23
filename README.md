@@ -2,7 +2,7 @@
 
 面向初学者的机器人运动规划教学与工程实践平台。开发方式为 **Tutorial-Driven Development**：每个阶段都能编译、运行、验证，并同步产出中文教程。
 
-当前进度：**Phase 3 已完成**（UR5e 正逆运动学、雅可比、可操作度）。Phase 4 需确认后再开始。
+当前进度：**Phase 1–8 已完成**。轨迹优化、MoveIt 重定时、mock 执行和三组实验都有实测记录。碰撞还没有放进优化器。
 
 ## 当前环境（实测）
 
@@ -64,6 +64,9 @@ ros2 topic echo /hello
 ├── src/robot_bringup/            Phase 2：启动 UR5e + MoveIt
 ├── src/robot_motion_planning/    Phase 2：规划 API 与 demo
 ├── src/robot_kinematics/         Phase 3：FK / IK / 雅可比 / 可操作度
+├── src/robot_trajectory_optimization/  Phase 4–6：五次多项式、minimum jerk、MINCO
+├── src/robot_trajectory_execution/     Phase 7–8：检查、执行、实验
+├── scripts/                      轨迹曲线和对比图
 ├── docs/
 ├── README.md
 ├── PLAN.md
@@ -88,6 +91,20 @@ ros2 launch robot_bringup ur5e_moveit.launch.py launch_rviz:=false run_demo:=tru
 - [Phase 1：环境与 ROS 2 基础](docs/01_environment_setup/tutorial.md)
 - [Phase 1 开发报告](docs/01_environment_setup/development_report.md)
 - [Phase 3：机械臂运动学](docs/03_robot_kinematics/tutorial.md)
+- [Phase 4：五次多项式](docs/04_trajectory_generation/tutorial.md)
+- [Phase 5：Minimum Jerk](docs/05_minimum_jerk/tutorial.md)
+- [Phase 6：MINCO](docs/06_minco/tutorial.md)
+- [Phase 7：系统集成](docs/07_system_integration/tutorial.md)
+- [Phase 8：性能评估](docs/08_performance_evaluation/tutorial.md)
+
+轨迹对比：
+
+```bash
+source /opt/ros/humble/setup.bash
+source ~/robot_motion_ws/install/setup.bash
+ros2 run robot_trajectory_optimization compare_trajectories
+ros2 run robot_trajectory_execution experiment_runner
+```
 
 运动学验收：
 
