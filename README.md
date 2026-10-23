@@ -2,7 +2,7 @@
 
 面向初学者的机器人运动规划教学与工程实践平台。开发方式为 **Tutorial-Driven Development**：每个阶段都能编译、运行、验证，并同步产出中文教程。
 
-当前进度：**Phase 2 已完成**（UR5e + MoveIt 2 规划，无界面 demo 通过）。Phase 3 需确认后再开始。
+当前进度：**Phase 3 已完成**（UR5e 正逆运动学、雅可比、可操作度）。Phase 4 需确认后再开始。
 
 ## 当前环境（实测）
 
@@ -63,6 +63,7 @@ ros2 topic echo /hello
 ├── src/robot_hello/              Phase 1：C++ Publisher / Subscriber
 ├── src/robot_bringup/            Phase 2：启动 UR5e + MoveIt
 ├── src/robot_motion_planning/    Phase 2：规划 API 与 demo
+├── src/robot_kinematics/         Phase 3：FK / IK / 雅可比 / 可操作度
 ├── docs/
 ├── README.md
 ├── PLAN.md
@@ -86,6 +87,15 @@ ros2 launch robot_bringup ur5e_moveit.launch.py launch_rviz:=false run_demo:=tru
 - [教程总目录](docs/README.md)
 - [Phase 1：环境与 ROS 2 基础](docs/01_environment_setup/tutorial.md)
 - [Phase 1 开发报告](docs/01_environment_setup/development_report.md)
+- [Phase 3：机械臂运动学](docs/03_robot_kinematics/tutorial.md)
+
+运动学验收：
+
+```bash
+source /opt/ros/humble/setup.bash
+source ~/robot_motion_ws/install/setup.bash
+ros2 run robot_kinematics kinematics_demo
+```
 
 ## 阶段规划
 

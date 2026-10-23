@@ -15,8 +15,8 @@
 | 阶段 | 文档 | 完成标准 |
 |---|---|---|
 | Phase 1 | [环境与 ROS 2 基础](01_environment_setup/tutorial.md) | 能编译并看到 talker / listener 通信 |
-| Phase 2 | [UR5e 与 MoveIt 2 基础](02_moveit_basics/tutorial.md) | 已完成，等待确认 |
-| Phase 3 | 机械臂运动学 | 未开始 |
+| Phase 2 | [UR5e 与 MoveIt 2 基础](02_moveit_basics/tutorial.md) | 已完成 |
+| Phase 3 | [机械臂运动学](03_robot_kinematics/tutorial.md) | 已完成，等待确认 |
 | Phase 4 | 五次多项式轨迹 | 未开始 |
 | Phase 5 | Minimum Jerk | 未开始 |
 | Phase 6 | MINCO | 未开始 |
@@ -32,3 +32,10 @@ Phase 2 附加文件：
 - [练习](02_moveit_basics/exercises.md)
 - [参考答案](02_moveit_basics/solutions.md)
 - [开发报告](02_moveit_basics/development_report.md)
+
+Phase 3 附加文件：
+
+- [数学](03_robot_kinematics/mathematics.md)
+- [练习](03_robot_kinematics/exercises.md)
+- [参考答案](03_robot_kinematics/solutions.md)
+- [开发报告](03_robot_kinematics/development_report.md)

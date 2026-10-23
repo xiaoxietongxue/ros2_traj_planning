@@ -26,4 +26,4 @@
 
 ## 当前阶段
 
-Phase 2：`src/robot_bringup`、`src/robot_motion_planning` 与 `docs/02_moveit_basics`。未经确认不得进入 Phase 3。
+Phase 3：`src/robot_kinematics` 与 `docs/03_robot_kinematics`。未经确认不得进入 Phase 4。
