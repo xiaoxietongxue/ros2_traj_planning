@@ -2,7 +2,7 @@
 
 面向初学者的机器人运动规划教学与工程实践平台。开发方式为 **Tutorial-Driven Development**：每个阶段都能编译、运行、验证，并同步产出中文教程。
 
-当前进度：**Phase 1 已完成并通过编译与通信验证**。后续阶段需确认后再开始。
+当前进度：**Phase 2 已完成**（UR5e + MoveIt 2 规划，无界面 demo 通过）。Phase 3 需确认后再开始。
 
 ## 当前环境（实测）
 
@@ -14,9 +14,9 @@
 | C++ | g++ 11.4，C++17 |
 | Eigen | 3.4.0 |
 | RViz 2 | 已安装 |
-| MoveIt 2 | **未安装**（Phase 2 再处理） |
-| ros2_control | **未安装**（Phase 7 再处理） |
-| OMPL | **未安装**（Phase 2 再处理） |
+| MoveIt 2 | 2.5.10（Phase 2 已从 apt 安装） |
+| ros2_control | 已随 MoveIt 依赖安装；本阶段不启动控制器 |
+| OMPL | 已随 `ros-humble-moveit-planners-ompl` 安装 |
 
 计划中的 Ubuntu 24.04 + Jazzy 是推荐组合，**不是当前机器配置**。本仓库按 Humble 开发，避免破坏已有环境。
 
@@ -60,11 +60,25 @@ ros2 topic echo /hello
 
 ```
 ~/robot_motion_ws/
-├── src/robot_hello/          Phase 1：C++ Publisher / Subscriber
-├── docs/                     中文教程
+├── src/robot_hello/              Phase 1：C++ Publisher / Subscriber
+├── src/robot_bringup/            Phase 2：启动 UR5e + MoveIt
+├── src/robot_motion_planning/    Phase 2：规划 API 与 demo
+├── docs/
 ├── README.md
 ├── PLAN.md
 └── AGENTS.md
+```
+
+只看模型：
+
+```bash
+ros2 launch robot_bringup view_ur5e.launch.py
+```
+
+无界面规划验收：
+
+```bash
+ros2 launch robot_bringup ur5e_moveit.launch.py launch_rviz:=false run_demo:=true
 ```
 
 ## 教程入口

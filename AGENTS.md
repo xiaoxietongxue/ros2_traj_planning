@@ -26,4 +26,4 @@
 
 ## 当前阶段
 
-Phase 1：`src/robot_hello` 与 `docs/01_environment_setup`。
+Phase 2：`src/robot_bringup`、`src/robot_motion_planning` 与 `docs/02_moveit_basics`。未经确认不得进入 Phase 3。

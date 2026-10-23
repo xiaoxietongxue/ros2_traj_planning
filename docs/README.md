@@ -15,7 +15,7 @@
 | 阶段 | 文档 | 完成标准 |
 |---|---|---|
 | Phase 1 | [环境与 ROS 2 基础](01_environment_setup/tutorial.md) | 能编译并看到 talker / listener 通信 |
-| Phase 2 | MoveIt 2 基础 | 未开始 |
+| Phase 2 | [UR5e 与 MoveIt 2 基础](02_moveit_basics/tutorial.md) | 已完成，等待确认 |
 | Phase 3 | 机械臂运动学 | 未开始 |
 | Phase 4 | 五次多项式轨迹 | 未开始 |
 | Phase 5 | Minimum Jerk | 未开始 |
@@ -23,9 +23,12 @@
 | Phase 7 | 系统集成 | 未开始 |
 | Phase 8 | 性能评估 | 未开始 |
 
-Phase 1 附加文件：
+Phase 1 附加文件：常见问题 / 练习 / 答案 / [开发报告](01_environment_setup/development_report.md)
 
-- [常见问题](01_environment_setup/troubleshooting.md)
-- [练习](01_environment_setup/exercises.md)
-- [参考答案](01_environment_setup/solutions.md)
-- [开发报告](01_environment_setup/development_report.md)
+Phase 2 附加文件：
+
+- [架构](02_moveit_basics/architecture.md)
+- [常见问题](02_moveit_basics/troubleshooting.md)
+- [练习](02_moveit_basics/exercises.md)
+- [参考答案](02_moveit_basics/solutions.md)
+- [开发报告](02_moveit_basics/development_report.md)
